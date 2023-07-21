@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    background-color: rgba(135, 226, 244, 0.347);
+    margin-bottom: 10px ;
+    padding: 50px;   
+    top:0px;
+    z-index:10;
+ 
+}
+
+.btnSuperior {
+   background-color: #81c2fe;
+   color: white;
+   padding: 25px 40px;
+   text-decoration: none;
+   border-radius: 1.5rem;
+}
+  
+.btnSuperior:hover {
+   background-color: #71a9ad;
+   color: white;
+}
+
+.logo{
+    /*width:50px;
+    height:50px;
+    background-color: rgba(0, 0, 255, 0.495);*/
+    position:fixed;
+    top:10px;
+    right:10px;
+}
+
+
+/* parallax */
+
+.parallax {
+	/* Imagen elegida */
+	background-image: url("img/fondoInicio.jpg");
+
+    /* Definir un alto específico */
+	height: 500px;
+
+	/* Crear el efecto parallax al scrollear */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	/* box modeling */
+	padding: 50px 30px;
+	margin-bottom: 50px;
+}
+
+.parallax h2, .parallax p {
+	font-size: larger;
+	padding: 10px 40px;
+	background-color: rgba(255, 255, 255, 0.7);
+}
+
+.parallax h2 {
+	text-align: center;
+	text-transform: capitalize;
+	padding-top: 20px;
+}
+
+.parallax p {
+	text-align: center;
+}
+
+.cuerpoInicio{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: aliceblue;
+}
+.textoInicio{
+    grid-column: 1;
+    text-align: center;
+    font-size: larger;
+    padding-top: 30%;
+    padding-left: 30px;
+}
+.fotoInicio{
+    grid-column: 2;
+    padding-left: 20%;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: rgba(135, 226, 244, 0.347);
+}
+.footRedes{
+    grid-column: 1;
+    text-align: center;
+}
+.footCelu{
+    grid-column: 2;
+}
+.descargaCelu{
+    width: 300px;
+    height: auto;
+}
+
+/*PREGUNTAS FRECUENTES*/
+.cuerpoPF{
+    background-color: aliceblue;
+}
+.preguntas{
+    font-size: large;
+    font-family: Georgia;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.respuestas{
+    font-size: medium;
+    font-family: Cambria;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+/*QUIENES SOMOS?*/
+.descripcionQS{
+    text-align: center;
+    font-family: Georgia;
+    font-size: large;
+    line-height: 2em;
+}
+
+/*CONTACTOS*/
+.cuestionario{
+    background-color: aliceblue;
+    text-align: center;
+    align-content: center;
+   
+}
+
+.redes{
+    background-color: aliceblue;
+    padding-top: 40px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+
+/*PRODUCTOS*/
+.product{
+    background-color: aliceblue;
+    padding-top: 40px;
+    text-align: center;
+    padding-bottom: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.product prod1{
+    grid-column: 1;
+}
+.product prod1:hover{
+    background-image: url(img/producto1b.jpeg);
+}
+
+.product prod2{
+    grid-column: 2;
+}
+.product prod2:hover{
+    background-image: url(img/producto2b.jpeg);
+}
+
+.product prod3{
+    grid-column: 3;
+}
+.product prod3:hover{
+    background-image: url(img/producto3b.jpeg);
+}
+
+.product prod4{
+    grid-column: 4;
+}
+.product prod4:hover{
+    background-image: url(img/producto4b.jpeg);
+}
