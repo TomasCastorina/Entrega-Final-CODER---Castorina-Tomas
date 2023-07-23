@@ -64,9 +64,6 @@ footer{
 }
 
 /*PREGUNTAS FRECUENTES*/
-.cuerpoPF{
-    background-color: aliceblue;
-}
 .preguntas{
     font-size: large;
     font-family: Georgia;
@@ -94,7 +91,7 @@ footer{
     background-color: aliceblue;
     text-align: center;
     align-content: center;
-   
+    padding: 20px;
 }
 
 .redes{
@@ -119,7 +116,7 @@ footer{
     grid-column: 1;
 }
 .product prod1:hover{
-    background-image: url(img/producto1b.jpeg);
+    background-image: url(./img/producto1b.jpeg);
 }
 
 .product prod2{
