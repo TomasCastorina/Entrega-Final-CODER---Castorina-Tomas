@@ -5,19 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maymay - Blanqueria</title>
-    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
    
 </head>
 <body>
-    <header class="header">
-        <nav>
-            <a class="btnSuperior" href="index.html">Inicio</a>
-            <a class="btnSuperior" href="quienesSomos.html">¿Quienes somos?</a>
-            <a class="btnSuperior" href="productos.html">Productos</a>
-            <a class="btnSuperior" href="preguntasFrecuentes.html">Preguntas Frecuentes</a>
-            <a class="btnSuperior" href="contactos.html">Contactos</a>
-            <div class="logo">
-                <img src="img/logoSinFondo.png" width="200" height="auto">
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary p-3 mb-2 bg-info-subtle text-emphasis-info">
+            <div class="container-fluid">
+                <div class="navbar-brand">
+                    <img src="./img/logoSinFondo.png" width="190" height="auto">
+                </div>
+                <div class="navbar-text">
+                    <a class="btn btn-outline-info" href="./index.html">Inicio</a>
+                    <a class="btn btn-outline-info" href="./quienesSomos.html">¿Quienes somos?</a>
+                    <a class="btn btn-outline-info" href="./productos.html">Productos</a>
+                    <a class="btn btn-outline-info" href="./preguntasFrecuentes.html">Preguntas Frecuentes</a>
+                    <a class="btn btn-outline-info" href="./contactos.html">Contactos</a>
+                </div>
             </div>
         </nav>
     </header>
@@ -41,15 +46,17 @@
     <footer>
         <div class="footRedes">
             <h4>Pueden seguirnos en nuestras redes sociales:</h4>
-            <img src="img/fb.png" alt="" width="50px" height="auto">
-            <img src="img/ig.png" alt="" width="50px" height="auto">
-            <img src="img/tw.png" alt="" width="50px" height="auto">
-            <img src="img/wp.png" alt="" width="50px" height="auto">
+            <img src="img/fb.png" class="imgRedes">
+            <img src="img/ig.png" class="imgRedes">
+            <img src="img/tw.png" class="imgRedes">
+            <img src="img/wp.png" class="imgRedes">
         </div>
         <div class="footCelu">
             <img class="descargaCelu" src="img/android.png" alt="">
             <img class="descargaCelu" src="img/iphone.png" alt="">
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
    </body>
 </html>
