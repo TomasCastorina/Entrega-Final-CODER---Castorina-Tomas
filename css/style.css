@@ -8,7 +8,7 @@
 
 .parallax {
 	/* Imagen elegida */
-	background-image: url("img/fondoInicio.jpg");
+	background-image: url("../img/fondoInicio.jpg");
 
     /* Definir un alto específico */
 	height: 350px;
