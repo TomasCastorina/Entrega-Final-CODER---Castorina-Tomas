@@ -24,8 +24,8 @@
 }
 
 .fotoInicio{
-    width: 400px;
-    height: auto;
+    display: block;
+    margin: auto;
 }
 
 footer{
@@ -73,6 +73,10 @@ footer{
     font-size: large;
     line-height: 2em;
 }
+.imgFabrica{
+    width: 600px;
+    height: auto;
+}
 
 /*CONTACTOS*/
 .cuestionario{
@@ -92,7 +96,6 @@ footer{
 
 /*PRODUCTOS*/
 .product{
-    background-color: aliceblue;
     padding-top: 40px;
     text-align: center;
     padding-bottom: 40px;
@@ -100,30 +103,42 @@ footer{
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.product prod1{
-    grid-column: 1;
-}
-.product prod1:hover{
-    background-image: url(./img/producto1b.jpeg);
+
+/*Quienes somos mediaQRY*/
+
+@media screen and (max-width:720px){
+    .imgFabrica{
+        width: 350px;
+        height: auto;
+    }
+    .videoFabrica{
+        text-align: center;
+        width: 300px;
+        height: auto;
+    }
 }
 
-.product prod2{
-    grid-column: 2;
-}
-.product prod2:hover{
-    background-image: url(img/producto2b.jpeg);
-}
-
-.product prod3{
-    grid-column: 3;
-}
-.product prod3:hover{
-    background-image: url(img/producto3b.jpeg);
+/*Productos mediaQRY*/
+@media screen and (max-width: 990px) {
+    .product{    
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
-.product prod4{
-    grid-column: 4;
-}
-.product prod4:hover{
-    background-image: url(img/producto4b.jpeg);
+@media screen and (max-width:480px) {
+    .product{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6,1fr);
+        grid-area:
+        "prod1"
+        "prod2"
+        "prod3"
+        "prod4"
+        "prod5"
+        "prod6";
+    }
+    .prod1, .prod2, .prod3, .prod4, .prod5, .prod6{
+        margin-left: 10%;
+    }
+    
 }
