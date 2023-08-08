@@ -1,0 +1,126 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: rgba(135, 226, 244, 0.347);
+  text-align: center;
+}
+
+.footRedes {
+  grid-column: 1;
+}
+
+.imgRedes {
+  width: 30px;
+  height: auto;
+}
+
+.footCelu {
+  grid-column: 2;
+}
+
+.descargaCelu {
+  width: 200px;
+  height: auto;
+}
+
+/* parallax */
+.parallax {
+  /* Imagen elegida */
+  background-image: url("../img/fondoInicio.jpg");
+  /* Definir un alto específico */
+  height: 350px;
+  /* Crear el efecto parallax al scrollear */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* box modeling */
+  padding: 100px;
+}
+
+.preguntas {
+  font-size: large;
+  font-family: Georgia;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.respuestas {
+  font-size: medium;
+  font-family: Georgia;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.descripcionQS {
+  text-align: center;
+  font-family: Georgia;
+  font-size: large;
+  line-height: 2em;
+}
+
+.imgFabrica {
+  width: 600px;
+  height: auto;
+}
+
+.cuestionario {
+  background-color: aliceblue;
+  text-align: center;
+  align-content: center;
+  padding: 20px;
+}
+
+.redes {
+  background-color: aliceblue;
+  padding-top: 40px;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.product {
+  padding-top: 40px;
+  text-align: center;
+  padding-bottom: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+/*Productos mediaQRY*/
+@media screen and (max-width: 990px) {
+  .product {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 480px) {
+  .product {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-area: "prod1" "prod2" "prod3" "prod4" "prod5" "prod6";
+  }
+  .prod1, .prod2, .prod3, .prod4, .prod5, .prod6 {
+    margin-left: 10%;
+  }
+}
+/*Quienes somos mediaQRY*/
+@media screen and (max-width: 720px) {
+  .imgFabrica {
+    width: 350px;
+    height: auto;
+  }
+  .videoFabrica {
+    text-align: center;
+    width: 300px;
+    height: auto;
+  }
+}/*# sourceMappingURL=estilo.css.map */

@@ -1,0 +1,22 @@
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: $colorFooter;
+    text-align: center;
+}
+.footRedes{
+    grid-column: 1;
+}
+.imgRedes{
+    width: 30px;
+    height: auto;
+}
+.footCelu{
+    grid-column: 2;
+}
+.descargaCelu{
+    width: 200px;
+    height: auto;
+}

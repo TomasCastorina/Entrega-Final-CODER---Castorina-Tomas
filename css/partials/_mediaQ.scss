@@ -1,0 +1,38 @@
+/*Productos mediaQRY*/
+@media screen and (max-width: 990px) {
+    .product{    
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .product{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6,1fr);
+        grid-area:
+        "prod1"
+        "prod2"
+        "prod3"
+        "prod4"
+        "prod5"
+        "prod6";
+    }
+    .prod1, .prod2, .prod3, .prod4, .prod5, .prod6{
+        margin-left: 10%;
+    }
+    
+}
+
+/*Quienes somos mediaQRY*/
+
+@media screen and (max-width:720px){
+    .imgFabrica{
+        width: 350px;
+        height: auto;
+    }
+    .videoFabrica{
+        text-align: center;
+        width: 300px;
+        height: auto;
+    }
+}
